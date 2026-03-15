@@ -11,5 +11,3 @@ function totalFine( fare ) {
     }
 }
 
-const vara =  totalFine("Gorib tai ticket katinai");
-console.log(vara);
