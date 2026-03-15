@@ -1,32 +1,3 @@
-function totalFine( fare ) {
-    if(typeof fare !== "number"){
-        return "Invalid";
-    }
-    if( fare > 0 ){
-        const ser20 = (fare * 20) / 100;
-        const fine = fare + ser20 + 30;
-        return fine;
-    }else{
-        return "Invalid";
-    }
-}
-
-
-
-
-function  onlyCharacter( str ) {
-    if(typeof str !== "string"){
-        return "Invalid";
-    }
-    const removeSpace = str.split(' ').join('');
-    const contToUpperCase = removeSpace.toUpperCase(); 
-    return contToUpperCase;
-}
-
-
-
-
-
 function  bestTeam( player1, player2 ) {
 
     if(typeof player1 !== "object" || typeof player2 !== "object"){
@@ -49,3 +20,6 @@ function  bestTeam( player1, player2 ) {
         return teamName2;
     }
 }
+
+const bestDoll = bestTeam(["Ger"], { name: "Germany", foul: 12, cardY: 0, cardR: 0 });
+console.log(bestDoll);
