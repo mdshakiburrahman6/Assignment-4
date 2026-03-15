@@ -11,3 +11,14 @@ function totalFine( fare ) {
     }
 }
 
+
+
+
+function  onlyCharacter( str ) {
+    if(typeof str !== "string"){
+        return "Invalid";
+    }
+    const removeSpace = str.split(' ').join('');
+    const contToUpperCase = removeSpace.toUpperCase(); 
+    return contToUpperCase;
+}
